@@ -7,24 +7,26 @@
     padding: 0px;
 }
 
-body {
-
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
 }
 
 header {
     background-color: black;
     color: white;
-    min-height: 100px;
-    padding-top: 60px;
     text-align: center;
 }
 
 header > h1 {
-    font-family: 'Passion One', cursive;
+    font-family: 'Passion one', cursive;
+    padding-top: 50px;
+    font-variant: small-caps;
     font-size: 3em;
 }
 
 header > p {
+    padding-bottom: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -34,13 +36,35 @@ header a {
     font-weight: bold;
 }
 
-header abbr {
-    text-decoration: none;
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.205);
+    width: 400px;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
